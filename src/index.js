@@ -1,3 +1,5 @@
+import "./styles/index.less";
+
 import Button from "./components/button";
 
 const components = {

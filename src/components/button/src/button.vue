@@ -4,6 +4,6 @@
 
 <script>
 export default {
-  name: "ac-button"
+  name: "AcButton"
 };
 </script>
