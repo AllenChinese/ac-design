@@ -1,7 +1,6 @@
 {
   "name": "acui",
   "version": "0.1.0",
-  "private": true,
   "main": "example/main",
   "scripts": {
     "serve": "vue-cli-service serve",
