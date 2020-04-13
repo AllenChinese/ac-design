@@ -1,12 +1,12 @@
 import Vue from "vue";
 import App from "./App.vue";
 import VueRouter from "vue-router";
-import acui from "../src/index";
+import acDesign from "../src/index";
 
 Vue.config.productionTip = false;
 
 Vue.use(VueRouter);
-Vue.use(acui);
+Vue.use(acDesign);
 
 const router = new VueRouter({
   esModule: false,
