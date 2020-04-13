@@ -1,3 +1,57 @@
-.button {
-  color: red;
+@button-prefix-cls: ~"@{css-prefix}btn";
+
+.@{button-prefix-cls} {
+  display: inline-block;
+  padding: 0 15px;
+  border-radius:@border-radius-small;
+  border: 1px solid transparent;
+  height: 32px;
+  line-height: 32px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: @font-size-base;
+  cursor: pointer;
+
+  // type
+  &-default {
+    .button-variant(@text-color, @white, @border-color-base)
+  }
+
+  &-primary {
+    .button-variant(@white, @primary-color, @primary-color);
+  }
+
+  &-text {
+    .button-variant(@text-color, transparent, transparent);
+  }
+
+  &-info {
+    .button-variant(@white, @info-color, @info-color);
+  }
+
+  &-success {
+    .button-variant(@white, @success-color, @success-color);
+  }
+
+  &-warning {
+    .button-variant(@white, @warning-color, @warning-color);
+  }
+
+  &-error {
+    .button-variant(@white, @error-color, @error-color);
+  }
+
+  // size
+  &-large {
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+  }
+
+  &-small {
+    padding: 0 7px;
+    height: 24px;
+    line-height: 24px;
+    font-size: 14px;
+  }
 }
