@@ -1,10 +1,10 @@
 {
   "name": "ac-design",
-  "version": "0.1.1",
-  "main": "example/main",
+  "version": "0.1.2",
+  "main": "/lib/ac-design.common.js",
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build --target lib --name ac-design --dest dist src/index.js",
+    "build": "vue-cli-service build --target lib --name ac-design --dest lib src/index.js",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
